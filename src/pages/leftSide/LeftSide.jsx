@@ -11,7 +11,10 @@ const LeftSide = () => {
             <Profile>
                 <img src="../images/profile.jpg" alt="" />
                 <h1>Hrithik Biswas</h1>
-                <button download>Download CV</button>
+
+                <a className="btn" href="./pdf/Hrithik-CV.pdf" download>
+                    Download CV
+                </a>
             </Profile>
             <Navbar>
                 <ul>
@@ -250,7 +253,7 @@ const Profile = styled.div`
             font-size: revert;
         }
     }
-    button {
+    a.btn {
         font-size: 17px;
         letter-spacing: 1px;
         background-color: #0bceaf;
@@ -260,6 +263,7 @@ const Profile = styled.div`
         border-radius: 1.4rem;
         font-weight: 300;
         color: #fff;
+        text-decoration: none;
         display: ${({ theme }) =>
             theme.navTextName === 'home' || theme.navTextName === 'contact'
                 ? 'inline'
