@@ -163,6 +163,13 @@ const Resume = () => {
                                 />
                             </li>
                             <li>
+                                <strong>Sass</strong>{' '}
+                                <ProgressBar
+                                    percentageOfSkill="80"
+                                    progressColor="#CC6699"
+                                />
+                            </li>
+                            <li>
                                 <strong>Javascript</strong>{' '}
                                 <ProgressBar
                                     percentageOfSkill="75"
@@ -170,10 +177,10 @@ const Resume = () => {
                                 />
                             </li>
                             <li>
-                                <strong>Sass</strong>{' '}
+                                <strong>PHP</strong>{' '}
                                 <ProgressBar
-                                    percentageOfSkill="80"
-                                    progressColor="#CC6699"
+                                    percentageOfSkill="65"
+                                    progressColor="#8892BE"
                                 />
                             </li>
                         </ul>

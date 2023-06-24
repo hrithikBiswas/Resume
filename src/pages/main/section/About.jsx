@@ -6,6 +6,9 @@ import SwiperContent from '../../../components/Swiper';
 const About = () => {
     const { setNavTextName } = useContext(Context);
     const { about } = useParams();
+    // const pathname = window.location.pathname;
+    // const currentPageName = pathname.substring(1);
+    // console.log(currentPageName);
 
     useEffect(() => {
         setNavTextName(about);
