@@ -6,7 +6,6 @@ import styled from 'styled-components';
 const FilteredTemplate = () => {
     let [searchParams] = useSearchParams();
     const categoryName = searchParams.get('categoryName');
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const allWorks = useMemo(() => {
         if (!categoryName) return ALLWORKS;
@@ -41,7 +40,6 @@ const WorkContainer = styled.div`
     }
 
     img {
-        object-fit: cover;
         width: 100%;
         height: 100%;
         border-radius: 1.2rem;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 
-const CategoryLink = ({ categoryName, children, props }) => {
+const CategoryLink = ({ categoryName, children }) => {
     const [searchParams] = useSearchParams();
     const isActive = searchParams.get('categoryName') === categoryName;
 

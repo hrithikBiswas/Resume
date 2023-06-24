@@ -56,7 +56,24 @@ let ALLWORKS = [
         templateLink: 'https://linkedin-clone-three-eta.vercel.app',
     },
     {
-        id: 8,
+        id: '8',
+        categoryName: 'Clone',
+        image: '../images/work/socialite.png',
+        title: '',
+        templateName: 'Socialite',
+        templateLink:
+            'https://socialite-template-raw-tailwindcss-v3.vercel.app',
+    },
+    {
+        id: 9,
+        categoryName: 'Others',
+        image: '../images/work/woocommerce.png',
+        title: '',
+        templateName: 'Woocommerce',
+        templateLink: 'https://woo-commerce-google-analytics.vercel.app/',
+    },
+    {
+        id: 10,
         categoryName: 'Others',
         image: '../images/work/mogo.png',
         title: '',

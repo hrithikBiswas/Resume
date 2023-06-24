@@ -90,6 +90,7 @@ const Contact = () => {
                             <input
                                 type="text"
                                 name="name"
+                                id="name"
                                 placeholder="Enter your name"
                                 required
                                 value={name}
@@ -101,6 +102,7 @@ const Contact = () => {
                             <input
                                 type="email"
                                 name="email"
+                                id="email"
                                 placeholder="Enter your email"
                                 required
                                 value={email}
@@ -112,7 +114,7 @@ const Contact = () => {
                         <label htmlFor="message">Message</label>
                         <textarea
                             name="message"
-                            id=""
+                            id="message"
                             rows="5"
                             value={message}
                             onChange={handleChange}
@@ -282,6 +284,7 @@ const SentMessage = styled.div`
         margin-top: 1rem;
         border-radius: 0.25rem;
         text-align: center;
+        cursor: pointer;
     }
 
     @media (max-width: 768px) {
