@@ -13,11 +13,11 @@ const Main = () => {
         <MainContainer className="main-content">
             <Routes>
                 <Route index element={<Home />} />
-                <Route path="/about/:about" element={<About />} />
-                <Route path="/resume/:resume" element={<Resume />} />
-                <Route path="/work/:work/*" element={<Works />} />
-                <Route path="/blog/:blog" element={<Blogs />} />
-                <Route path="/contact/:contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/resume" element={<Resume />} />
+                <Route path="/work/*" element={<Works />} />
+                <Route path="/blog" element={<Blogs />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
         </MainContainer>
     );

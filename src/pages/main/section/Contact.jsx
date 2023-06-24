@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { Context } from '../../../context/context';
 import styled from 'styled-components';
 import { db } from '../../../firebase';
@@ -7,7 +6,8 @@ import { addDoc, collection } from 'firebase/firestore';
 
 const Contact = () => {
     const { setNavTextName } = useContext(Context);
-    const { contact } = useParams();
+    const currentPathname = window.location.pathname;
+    const currentPageName = currentPathname.substring(1);
     const [data, setData] = useState({
         name: '',
         email: '',
@@ -16,7 +16,7 @@ const Contact = () => {
     });
 
     useEffect(() => {
-        setNavTextName(contact);
+        setNavTextName(currentPageName);
     });
 
     const { name, email, message, loading } = data;

@@ -1,17 +1,14 @@
 import React, { useContext, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import { Context } from '../../../context/context';
 import styled from 'styled-components';
 import SwiperContent from '../../../components/Swiper';
 const About = () => {
     const { setNavTextName } = useContext(Context);
-    const { about } = useParams();
-    // const pathname = window.location.pathname;
-    // const currentPageName = pathname.substring(1);
-    // console.log(currentPageName);
+    const currentPathname = window.location.pathname;
+    const currentPageName = currentPathname.substring(1);
 
     useEffect(() => {
-        setNavTextName(about);
+        setNavTextName(currentPageName);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 

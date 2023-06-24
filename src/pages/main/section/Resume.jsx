@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { Context } from '../../../context/context';
 import SubtitleBorder from '../../../components/SubtitleBorder';
@@ -8,10 +7,11 @@ import Hr from '../../../components/Hr';
 
 const Resume = () => {
     const { setNavTextName } = useContext(Context);
-    const { resume } = useParams();
+    const currentPathname = window.location.pathname;
+    const currentPageName = currentPathname.substring(1);
 
     useEffect(() => {
-        setNavTextName(resume);
+        setNavTextName(currentPageName);
     });
     return (
         <Section>

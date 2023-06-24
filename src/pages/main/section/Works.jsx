@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import { Context } from '../../../context/context';
 import styled from 'styled-components';
 import PortfolioBorder from '../../../components/PortfolioBorder';
@@ -9,10 +8,11 @@ import AllWorks from './work/FilteredTemplate';
 
 const Works = () => {
     const { setNavTextName } = useContext(Context);
-    const { work } = useParams();
+    const currentPathname = window.location.pathname;
+    const currentPageName = currentPathname.substring(1);
 
     useEffect(() => {
-        setNavTextName(work);
+        setNavTextName(currentPageName);
     });
 
     return (

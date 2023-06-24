@@ -1,14 +1,14 @@
 import React, { useContext, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { Context } from '../../../context/context';
 
 const Blogs = () => {
     const { setNavTextName } = useContext(Context);
-    const { blog } = useParams();
+    const currentPathname = window.location.pathname;
+    const currentPageName = currentPathname.substring(1);
 
     useEffect(() => {
-        setNavTextName(blog);
+        setNavTextName(currentPageName);
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);

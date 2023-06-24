@@ -47,7 +47,7 @@ const LeftSide = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/about/about"
+                            to="/about"
                             className={({ isActive }) =>
                                 isActive ? 'nav-active' : ''
                             }
@@ -74,7 +74,7 @@ const LeftSide = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/resume/resume"
+                            to="/resume"
                             className={({ isActive }) =>
                                 isActive ? 'nav-active' : ''
                             }
@@ -101,7 +101,7 @@ const LeftSide = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="work/work"
+                            to="work"
                             className={({ isActive }) =>
                                 isActive ? 'nav-active' : ''
                             }
@@ -128,7 +128,7 @@ const LeftSide = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/blog/blog"
+                            to="/blog"
                             className={({ isActive }) =>
                                 isActive ? 'nav-active' : ''
                             }
@@ -155,7 +155,7 @@ const LeftSide = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/contact/contact"
+                            to="/contact"
                             className={({ isActive }) =>
                                 isActive ? 'nav-active' : ''
                             }
