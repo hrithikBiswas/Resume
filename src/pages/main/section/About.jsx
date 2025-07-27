@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { Context } from '../../../context/context';
 import styled from 'styled-components';
 import SwiperContent from '../../../components/Swiper';
+import { calculateAge } from '../../../utils/actions';
 const About = () => {
     const { setNavTextName } = useContext(Context);
     const currentPathname = window.location.pathname;
@@ -22,47 +23,69 @@ const About = () => {
                     </div>
                 </Image>
                 <Content>
-                    <h1>
-                        A short story about me , my mission, thinking and craft.
-                    </h1>
+                    <h1>A snapshot of me</h1>
                     <div>
                         <p>
-                            I'm a Front-End Web Developer who has been awarded
-                            Responsive Web Designer from the freeCodeCamp. I
-                            have experienced over 2 years of building and
-                            maintaining responsive websites in this sector.
+                            I’m Hrithik Biswas, a front-end web developer with
+                            over 3 years of experience in building
+                            high-performance websites and applications using
+                            React.js and Next.js. I specialize in transforming
+                            complex designs into responsive, scalable, and
+                            business-focused web solutions. My approach stays
+                            current with the latest tools and trends, ensuring
+                            optimized, user-friendly experiences across all
+                            platforms.
                         </p>
                         <p>
-                            Currently, I'm looking for a team to improve my
-                            skill more and to work together in the web developer
-                            community-based in Bangladesh.
+                            By leveraging my expertise, I consistently deliver
+                            high-quality front-end development and convert
+                            intricate designs into functional websites.
                         </p>
                     </div>
                     <div className="adress">
                         <ul>
                             <li>
-                                Mail: <span>mr.hrithibiswas@gmail.com</span>
+                                Mail:{' '}
+                                <span>
+                                    <a href="mailto:mr.hrithibiswas@gmail.com">
+                                        mr.hrithibiswas@gmail.com
+                                    </a>
+                                </span>
                             </li>
                             <li>
-                                Phone: <span>+8801865696427</span>
+                                Phone:{' '}
+                                <span>
+                                    <a href="tel:+8801865696427">
+                                        +8801865696427
+                                    </a>
+                                </span>
                             </li>
                             <li>
-                                City: <span>Dhaka,Dhaka</span>
+                                City: <span>Gazipur,Dhaka</span>
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                Age: <span>22</span>
+                                Age: <span>{calculateAge('2000-02-14')}</span>
                             </li>
                             <li>
-                                Degree: <span>BBA Honors</span>
+                                Degree: <span>BBA, MBA</span>
                             </li>
                             <li>
-                                Freelance: <span>Available</span>
+                                Freelance:{' '}
+                                <span className="available">Available</span>
                             </li>
                         </ul>
                     </div>
-                    <button>Hire Me</button>
+                    <button>
+                        <a
+                            href="https://www.upwork.com/freelancers/hrithikbiswas"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Hire Me
+                        </a>
+                    </button>
                 </Content>
             </Introduction>
             <Border />
@@ -94,7 +117,7 @@ const Image = styled.div`
         position: relative;
         img {
             width: 90%;
-            border-radius: 2rem 2rem 0 2rem;
+            border-radius: 2rem 2rem 2rem 2rem;
             position: relative;
             top: 15px;
             z-index: 10;
@@ -148,6 +171,16 @@ const Content = styled.div`
 
             span {
                 color: #595959;
+                font-weight: normal;
+                a {
+                    color: #595959;
+                }
+            }
+            li {
+                font-weight: bold;
+                .available {
+                    color: #38b000;
+                }
             }
         }
         @media (max-width: 992px) {
@@ -160,16 +193,22 @@ const Content = styled.div`
     }
 
     button {
-        font-size: 17px;
-        letter-spacing: 1px;
-        background-color: #0bceaf;
         outline: none;
         border: none;
-        padding: 1rem 2rem;
         border-radius: 1.4rem;
-        font-weight: 300;
-        color: #fff;
         margin-top: 2rem;
+        cursor: pointer;
+
+        a {
+            color: #ffffff;
+            background-color: #0bceaf;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 17px;
+            padding: 1rem 2rem;
+            font-weight: 300;
+            border-radius: 1.4rem;
+        }
     }
 
     @media (max-width: 992px) {

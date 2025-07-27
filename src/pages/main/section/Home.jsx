@@ -21,9 +21,10 @@ const Home = () => {
                     <Typewriter
                         words={[
                             'Hrithik Biswas',
-                            'A Web Developer',
                             'A Front-End Developer',
                             'A React Developer',
+                            'A Next.js Developer',
+                            'A Junior Wordpress Developer',
                         ]}
                         loop={false}
                         cursor
@@ -34,7 +35,7 @@ const Home = () => {
                     />
                 </span>
             </h1>
-            <h1>Welcome to my page</h1>
+            <h1>Welcome to My Website</h1>
         </Section>
     );
 };

@@ -68,7 +68,8 @@ const Contact = () => {
                             <img src="../images/phone.svg" alt="phone" />
                         </span>
                         <p>
-                            <strong>Phone: </strong>+8801865696427
+                            <strong>Phone: </strong>
+                            <a href="tel:+8801865696427">+8801865696427</a>
                         </p>
                     </li>
                     <li>
@@ -76,7 +77,10 @@ const Contact = () => {
                             <img src="../images/email.svg" alt="email" />
                         </span>
                         <p>
-                            <strong>Email: </strong>mr.hrithibiswas@gmail.com
+                            <strong>Email: </strong>
+                            <a href="mailto:mr.hrithibiswas@gmail.com">
+                                mr.hrithibiswas@gmail.com
+                            </a>
                         </p>
                     </li>
                 </ul>
@@ -137,7 +141,8 @@ const ContactSection = styled.section`
     display: flex;
     justify-content: center;
     box-shadow: 1px 5px 29px -7px rgb(0 0 0 / 30%);
-
+    border-radius: 10px;
+    overflow: hidden;
     position: relative;
     transform: translateY(-50%);
     top: 50%;
@@ -185,6 +190,15 @@ const ContactMe = styled.div`
                     color: #fff;
                     font-weight: 600;
                     margin-right: 5px;
+                }
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #f0f0f0;
                 }
             }
         }

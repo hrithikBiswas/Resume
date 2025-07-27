@@ -12,11 +12,19 @@ let ALLWORKS = [
         categoryName: 'Portfolio',
         image: '../images/work/portfolio2.png',
         title: '',
-        templateName: 'BootstrapPortfolio',
+        templateName: 'Bootstrap Portfolio',
         templateLink: 'https://hrithikbiswas.github.io/bootstrap-project-01',
     },
     {
         id: 3,
+        categoryName: 'E-Commerce',
+        image: '../images/work/ecommerce.png',
+        title: '',
+        templateName: 'E-Commerce Website',
+        templateLink: 'ecommerce-nextjs-ebon.vercel.app',
+    },
+    {
+        id: 4,
         categoryName: 'Travel',
         image: '../images/work/travelling.png',
         title: '',
@@ -24,7 +32,7 @@ let ALLWORKS = [
         templateLink: 'http://travel-template.vercel.app',
     },
     {
-        id: 4,
+        id: 5,
         categoryName: 'Food',
         image: '../images/work/restaurant.png',
         title: '',
@@ -32,7 +40,7 @@ let ALLWORKS = [
         templateLink: 'http://restaurant-template-ruby.vercel.app',
     },
     {
-        id: 5,
+        id: 6,
         categoryName: 'Movie',
         image: '../images/work/disney.png',
         title: '',
@@ -40,7 +48,7 @@ let ALLWORKS = [
         templateLink: 'https://disney-clone-c21a8.web.app',
     },
     {
-        id: 6,
+        id: 7,
         categoryName: 'Gaming',
         image: '../images/work/gaming.png',
         title: '',
@@ -48,7 +56,7 @@ let ALLWORKS = [
         templateLink: 'https://hrithikbiswas.github.io/gaming-website/',
     },
     {
-        id: 7,
+        id: 8,
         categoryName: 'Clone',
         image: '../images/work/linkedin.png',
         title: '',
@@ -56,16 +64,16 @@ let ALLWORKS = [
         templateLink: 'https://linkedin-clone-three-eta.vercel.app',
     },
     {
-        id: '8',
+        id: 9,
         categoryName: 'Clone',
         image: '../images/work/socialite.png',
         title: '',
         templateName: 'Socialite',
         templateLink:
-            'https://socialite-template-raw-tailwindcss-v3.vercel.app',
+            'https://socialite-template-raw-tailwindcss-v3-git-9570bc-hrithik-biswas.vercel.app/',
     },
     {
-        id: 9,
+        id: 10,
         categoryName: 'Others',
         image: '../images/work/woocommerce.png',
         title: '',
@@ -73,7 +81,7 @@ let ALLWORKS = [
         templateLink: 'https://woo-commerce-google-analytics.vercel.app/',
     },
     {
-        id: 10,
+        id: 11,
         categoryName: 'Others',
         image: '../images/work/mogo.png',
         title: '',

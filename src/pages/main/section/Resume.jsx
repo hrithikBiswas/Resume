@@ -25,9 +25,15 @@ const Resume = () => {
                 <SubtitleBorder />
                 <ContentBlog>
                     <div>
+                        <span>2022 - 2023</span>
+                        <h3>MBA</h3>
+                        <p>Government Titumir College</p>
+                        <p>Dhaka, Bangladesh</p>
+                    </div>
+                    <div>
                         <span>2018- 2022</span>
                         <h3>BBA - Honors</h3>
-                        <p>Government of Titumir College</p>
+                        <p>Government Titumir College</p>
                         <p>Dhaka, Bangladesh</p>
                     </div>
                     <div>
@@ -44,18 +50,28 @@ const Resume = () => {
                     </div>
                 </ContentBlog>
             </Education>
-            <Experience>
+            <Learning>
                 <h1>
                     <span>
                         <img src="../images/experience.svg" alt="education" />
                     </span>
-                    Experience
+                    Learning Hub
                 </h1>
                 <SubtitleBorder />
-                <ExperienceContent>
+                <LearningContent>
                     <div>
-                        <span>2020-At present</span>
-                        <h3>Front-end Web Developer</h3>
+                        <span>2025</span>
+                        <h3>Next.js App Router Fundamentals</h3>
+                        <p>
+                            <strong>Resorces: </strong>
+                            <a href="https://nextjs.org/learn" target="blank">
+                                nextjs.org
+                            </a>
+                        </p>
+                    </div>
+                    <div>
+                        <span>2021-At present</span>
+                        <h3>Front-end Web Development</h3>
                         <p>
                             <strong>Resorces: </strong>
                             <a href="https://www.w3schools.com/" target="blank">
@@ -72,7 +88,7 @@ const Resume = () => {
                         </p>
                     </div>
                     <div>
-                        <span>2021-At present</span>
+                        <span>2022-At present</span>
                         <h3>React Developer</h3>
                         <p>
                             <strong>Resorces: </strong>
@@ -121,7 +137,7 @@ const Resume = () => {
                         </p>
                     </div>
                     <div>
-                        <span>2020-2021</span>
+                        <span>2021-2022</span>
                         <h3>PhotoShop</h3>
                         <p>
                             <strong>Resorces: </strong>
@@ -133,6 +149,68 @@ const Resume = () => {
                             </a>
                         </p>
                     </div>
+                </LearningContent>
+            </Learning>
+            <Experience>
+                <h1>
+                    <span>
+                        <img src="../images/briefcase.svg" alt="briefcase" />
+                    </span>
+                    Working Exeperience
+                </h1>
+                <SubtitleBorder />
+                <ExperienceContent>
+                    <ul>
+                        <li>
+                            🛠️ Expertise in HTML, CSS, JavaScript, and modern
+                            JavaScript features like ES6.
+                        </li>
+                        <li>
+                            🎨 Proficient with SASS, SCSS, and CSS frameworks
+                            like Tailwind CSS, Bootstrap 5, etc.
+                        </li>
+                        <li>
+                            🔄 Converting PSD/Figma to HTML5, CSS3, React.js,
+                            and Next.js.
+                        </li>
+                        <li>
+                            🖌️ Strong understanding of Front-End UI Frameworks:
+                            Next UI, Shade CN, Bootstrap, React Bootstrap,
+                            Material-UI, and Tailwind-UI.
+                        </li>
+                        <li>
+                            🛠️ Fixing any HTML, CSS, and UI issues in React.js
+                            and Next.js.
+                        </li>
+                        <li>📊 Knowledge of databases such as MySQL.</li>
+                        <li>
+                            🔌 Working experience with WordPress REST API
+                            Integration.
+                        </li>
+                        <li>
+                            🧩 Ability to implement any front-end plugin in an
+                            existing project.
+                        </li>
+                        <li>
+                            🗂️ Proficient with version control systems like Git.
+                        </li>
+                        <li>
+                            📦 Experienced with front-end build tools and
+                            package managers like Webpack and npm.
+                        </li>
+                        <li>
+                            📈 Staying updated with the latest web development
+                            trends and technologies.
+                        </li>
+                        <li>
+                            🧠 Deep knowledge of design patterns and front-end
+                            architecture.
+                        </li>
+                        <li>
+                            🛠️ Problem-solving and communication skills that
+                            ensure smooth project delivery.
+                        </li>
+                    </ul>
                 </ExperienceContent>
             </Experience>
             <Skills>
@@ -197,6 +275,20 @@ const Resume = () => {
                                 />
                             </li>
                             <li>
+                                <strong>Next.js</strong>{' '}
+                                <ProgressBar
+                                    percentageOfSkill="85"
+                                    progressColor="#57cc99"
+                                />
+                            </li>
+                            <li>
+                                <strong>Axios</strong>{' '}
+                                <ProgressBar
+                                    percentageOfSkill="55"
+                                    progressColor="#7c5cb1"
+                                />
+                            </li>
+                            <li>
                                 <strong>Jquery</strong>{' '}
                                 <ProgressBar
                                     percentageOfSkill="55"
@@ -220,6 +312,39 @@ const Resume = () => {
                         </ul>
                     </div>
                     <div>
+                        <h3>Database</h3>
+                        <Hr />
+                        <ul>
+                            <li>
+                                <strong>MySql</strong>{' '}
+                                <ProgressBar
+                                    percentageOfSkill="65"
+                                    progressColor="#ffb700"
+                                />
+                            </li>
+                            <li>
+                                <strong>MongoDB</strong>{' '}
+                                <ProgressBar
+                                    percentageOfSkill="45"
+                                    progressColor="#199555"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>CMS</h3>
+                        <Hr />
+                        <ul>
+                            <li>
+                                <strong>Wordpress</strong>{' '}
+                                <ProgressBar
+                                    percentageOfSkill="60"
+                                    progressColor="#08789E"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
                         <h3>Technologies & Others</h3>
                         <Hr />
                         <ul>
@@ -235,6 +360,13 @@ const Resume = () => {
                                 <ProgressBar
                                     percentageOfSkill="65"
                                     progressColor="#1C78C0"
+                                />
+                            </li>
+                            <li>
+                                <strong>Vite</strong>{' '}
+                                <ProgressBar
+                                    percentageOfSkill="65"
+                                    progressColor="#9174FD"
                                 />
                             </li>
                             <li>
@@ -286,6 +418,7 @@ const Resume = () => {
                 <CertificateContent>
                     <div>
                         <h3>Responsive Web Designe</h3>
+                        <p className="duration">January 2021 - June 2021</p>
                         <p>
                             <strong>View: </strong>{' '}
                             <a
@@ -295,6 +428,26 @@ const Resume = () => {
                                 certificate
                             </a>
                         </p>
+                    </div>
+                    <div>
+                        <h3>Next.js App Router Fundamentals course</h3>
+                        <p className="duration">April 2025 - May 2025</p>
+                        <p>
+                            <strong>View: </strong>{' '}
+                            <a
+                                href="https://nextjs.org/learn/certificate?course=dashboard-app&user=53433&certId=dashboard-app-53433-1752941505654"
+                                target="blank"
+                            >
+                                certificate
+                            </a>
+                        </p>
+                    </div>
+                    <div>
+                        <h3>
+                            Web Design & Wordpress Theme Development, DreamLand
+                            IT Institute
+                        </h3>
+                        <p className="duration">July 2022 – October 2022</p>
                     </div>
                 </CertificateContent>
             </Certificate>
@@ -374,18 +527,30 @@ const ContentBlog = styled.div`
         }
     }
 `;
-const Experience = styled(Education)`
+const Learning = styled(Education)`
     margin-top: 5rem;
 `;
 
-const ExperienceContent = styled(ContentBlog)`
+const LearningContent = styled(ContentBlog)`
     div {
         h3 {
             letter-spacing: 1.5px;
         }
     }
 `;
-const Skills = styled(Experience)``;
+const Experience = styled(Learning)``;
+const ExperienceContent = styled.div`
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.8rem;
+        font-size: 16px;
+        color: #000000;
+        margin-top: 3rem;
+    }
+`;
+const Skills = styled(Learning)``;
 const SkillsContent = styled.div`
     display: grid;
     grid-template-columns: auto auto;
@@ -431,5 +596,13 @@ const SkillsContent = styled.div`
         }
     }
 `;
-const Certificate = styled(Experience)``;
-const CertificateContent = styled(ExperienceContent)``;
+const Certificate = styled(Learning)``;
+const CertificateContent = styled(LearningContent)`
+    h3 {
+        margin-bottom: 0rem !important;
+    }
+    .duration {
+        font-size: 14px;
+        color: #595959d;
+    }
+`;
