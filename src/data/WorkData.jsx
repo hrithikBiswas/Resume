@@ -21,7 +21,7 @@ let ALLWORKS = [
         image: '../images/work/ecommerce.png',
         title: '',
         templateName: 'E-Commerce Website',
-        templateLink: 'ecommerce-nextjs-ebon.vercel.app',
+        templateLink: 'https://ecommerce-nextjs-ebon.vercel.app/',
     },
     {
         id: 4,
