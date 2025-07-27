@@ -61,7 +61,7 @@ let ALLWORKS = [
         image: '../images/work/linkedin.png',
         title: '',
         templateName: 'Linkedin',
-        templateLink: 'https://linkedin-clone-three-eta.vercel.app',
+        templateLink: 'https://linkedin-clone-mu-woad.vercel.app/',
     },
     {
         id: 9,
