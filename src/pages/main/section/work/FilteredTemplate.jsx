@@ -11,6 +11,7 @@ const FilteredTemplate = () => {
         if (!categoryName) return ALLWORKS;
         return filteredByCategory(categoryName);
     });
+
     return (
         <WorkContainer>
             {allWorks.map((work) => (
